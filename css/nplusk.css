@@ -66,3 +66,11 @@ body {
 
 img.placeholder { height: 60vh; width: auto; margin-top: 2em; opacity: 0.75;}
 
+p.btn.teal,
+p.btn.teal:hover {
+  background: rgba(134,207,172,1); 
+  color: rgba(89,88,89,1);
+  cursor: auto;
+  margin-top: 2em;
+  padding: 1em 2em;
+}
