@@ -63,3 +63,6 @@ body {
 #backdrop .lead.oswald {
   font-size: 3em;
 }
+
+img.placeholder { height: 60vh; width: auto; margin-top: 2em; opacity: 0.75;}
+
