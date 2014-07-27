@@ -110,9 +110,6 @@ a.btn:hover {
 }
 
 @media (min-width: 768px) {
-  #intro {
-    margin-bottom: 60vh;
-  }
   #backdrop h1 {
     font-size: 5em;
   }
