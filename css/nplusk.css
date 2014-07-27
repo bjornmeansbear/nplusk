@@ -56,6 +56,7 @@ img.placeholder {
   opacity: 0.88;
 }
 
+#backdrop .container,
 #contents .container {
   color: white;
   padding: 4em 1.5em 10em;
@@ -101,11 +102,11 @@ a.btn.orange:hover {
     padding-bottom: 20vh;
   }
   
-  #contents h1 {
+  #backdrop h1 {
     font-size: 7em;
   }
-  #contents h4,
-  #contents .lead.oswald {
+  #backdrop h4,
+  #backdrop .lead.oswald {
     font-size: 3em;
   }
 
@@ -116,10 +117,10 @@ a.btn.orange:hover {
   }
 }
 
-@media (min-height: 520px) {
+@media (min-height: 520px) and (min-width: 992px) {
   #intro {
     padding: 5em 25%;
-    margin-bottom: 20vh;
+    margin-bottom: 100vh;
     height: 90vh;
   }
 }
