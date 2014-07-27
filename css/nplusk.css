@@ -39,9 +39,10 @@ body {
 }
 
 #intro {
-  margin: 0;
-  padding: 2em 2em 4em 2em;
   background: rgba(134,207,172,1);
+  margin: 0;
+  margin-bottom: 100vh;
+  padding: 2em 2em 4em 2em;
   /**/
   -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
@@ -60,6 +61,11 @@ img.placeholder {
 #contents .container {
   color: white;
   padding: 4em 1.5em 10em;
+}
+
+#contents .container {
+  background: rgba(145,127,113,1);
+  border-radius: 25px;
 }
 
 p.btn.teal,
@@ -82,13 +88,25 @@ a.btn.orange:hover {
   padding: 1em 2em;
   display: block;
   white-space: normal;
-  transition: all 300ms;
 }
 
 a.btn.orange:hover {
   background: white;
   color: rgba(222,92,81,1);
 }
+
+a.btn {
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 4px  rgba(0, 0, 0, 0.2);
+}
+
+a.btn:hover {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
 
 @media (min-width: 992px) {
   img.placeholder {
@@ -98,7 +116,7 @@ a.btn.orange:hover {
 
   #contents .container {
     padding: 0;
-    padding-top: 4em;
+    padding-top: 10vh;
     padding-bottom: 20vh;
   }
   
@@ -120,7 +138,6 @@ a.btn.orange:hover {
 @media (min-height: 520px) and (min-width: 992px) {
   #intro {
     padding: 5em 25%;
-    margin-bottom: 100vh;
     height: 90vh;
   }
 }
