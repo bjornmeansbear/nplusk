@@ -10,7 +10,7 @@
   font-family: 'PT Mono', "Lucida Console", Monaco, monospace;
 }
 .gentium {
-  font-family: 'Gentium Basic', georgia, serif;
+  font-family: 'Gentium Basic', georgia, serif !important;
 }
 /* Logo */
 #logo a {
@@ -25,44 +25,44 @@
 }
 /* Typography */
 .wufoo .info h2 {
-  font-size: 160%;
-  font-family: 'Gentium Basic', georgia, serif;
+  font-size: 2em;
+  font-family: 'Gentium Basic', georgia, serif !important;
 }
 .wufoo .info div {
   font-size: 1.111em;
-  font-family: 'Gentium Basic', georgia, serif;
+  font-family: 'Gentium Basic', georgia, serif !important;
 }
 .wufoo .section h3 {
   font-size: 1.111em;
-  font-family: 'Gentium Basic', georgia, serif;
+  font-family: 'Gentium Basic', georgia, serif !important;
 }
 .wufoo .section div {
   font-size: 1.111em;
-  font-family: 'Gentium Basic', georgia, serif;
+  font-family: 'Gentium Basic', georgia, serif !important;
 }
 .wufoo label.desc,
 .wufoo legend.desc {
   font-size: 1.111em;
-  font-family: 'Gentium Basic', georgia, serif;
+  font-family: 'Gentium Basic', georgia, serif !important;
 }
 .wufoo li div,
 .wufoo li div label,
 .wufoo li span label {
   font-size: 1.111em;
-  font-family: 'Gentium Basic', georgia, serif;
+  font-family: 'Gentium Basic', georgia, serif !important;
 }
 .wufoo input.text,
 .wufoo textarea.textarea,
 .wufoo select.select,
 .wufoo label.choice {
   font-size: 1.111em;
-  font-family: 'Gentium Basic', georgia, serif;
+  font-family: 'Gentium Basic', georgia, serif !important;
 }
 .wufoo label.choice {
   font-size: 1.111em;
-  font-family: 'Gentium Basic', georgia, serif;
+  font-family: 'Gentium Basic', georgia, serif !important;
 }
 .wufoo .instruct {
   font-size: 1.111em;
-  font-family: 'Gentium Basic', georgia, serif;
+  font-family: 'Gentium Basic', georgia, serif !important;
 }
