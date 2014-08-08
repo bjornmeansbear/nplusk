@@ -1,0 +1,26 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Old+Standard+TT:400,400italic,700);
+@import url(http://fonts.googleapis.com/css?family=PT+Mono);
+@import url(http://fonts.googleapis.com/css?family=Gentium+Basic:400,700,400italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic);
+.oswald {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.oldstandard {
+  font-family: 'Old Standard TT', georgia, serif;
+}
+.ptmono {
+  font-family: 'PT Mono', "Lucida Console", Monaco, monospace;
+}
+.gentium {
+  font-family: 'Gentium Basic', georgia, serif;
+}
+.karla {
+  font-family: 'Karla', Helvetica, Arial, sans-serif;
+}
+form {
+  font-family: 'Gentium Basic', georgia, serif;
+  font-size: 1.111em;
+}
