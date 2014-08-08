@@ -15,7 +15,7 @@
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;  
+  bottom: 0;
 }
 
 /** Colors **/
@@ -36,20 +36,40 @@
   box-shadow: 0 4px 4px  rgba(0, 0, 0, 0.2);
 }
 
+.rnded-corners {
+  border-radius: 12px;
+}
+
 html,
 body {
   color: @pms426-dkgray;
   text-align: center;
 }
 
+.red,.teal,.blue,.gray,.dkgray,.pink,.brown {
+  .rnded-corners;
+  .dropshadow;
+}
+.red {
+  background: @pms485-red;
+}
+.teal {
+  background: @pms570-teal;
+}
 .blue {
   background: @pms637-blue;
 }
 .gray {
   background: @pms423-medgray;
 }
+.dkgray {
+  background: @pms426-dkgray;
+}
 .pink {
   background: @pms709-pink;
+}
+.brown {
+  background: @pms7504-brown;
 }
 
 .add-top        { margin-top: 1.5em; }
@@ -57,7 +77,7 @@ body {
 .add-bottom     { margin-bottom: 1.5em; }
 .add-bottom-2x  { margin-bottom: 3em; }
 
-#backdrop { 
+#backdrop {
   background: @pms7504-brown url('../img/woodgrain-transparent.png') center center no-repeat;
   background-size: cover;
   z-index: -1;
@@ -91,11 +111,9 @@ header {
 }
 
 .event {
-  border-radius: 12px;
   padding-top: 15px;
   padding-bottom: 30px;
   position: relative;
-  .dropshadow;
 }
 
 img { width: 100%; max-width: 100%; }
@@ -111,6 +129,7 @@ img.placeholder {
 .wrapper .container {
   color: white;
   padding: 4em 1.5em 4em;
+  .gentium;
 }
 
 /**** NAV BAR UP TOP ****/
@@ -137,7 +156,7 @@ header nav ul > li > a {
 }
 
 header nav ul > li.title > a {
-  font-family: 'Old Standard TT', georgia, serif; 
+  font-family: 'Old Standard TT', georgia, serif;
   text-transform: capitalize;
   letter-spacing: 1px;
   color: rgba(255,255,255,0.75);
@@ -160,7 +179,7 @@ header nav ul > li.title > a:hover {
 
 p.btn.teal,
 p.btn.teal:hover {
-  background: @pms570-teal; 
+  background: @pms570-teal;
   color: rgba(89,88,89,1);
   cursor: auto;
   margin: 2em 0;
@@ -235,4 +254,9 @@ a.btn:hover {
     padding: 5em 25%;
     height: 90vh;
   }
+}
+
+/** TYPOGRAPHY?? **/
+section h2 {
+  font-size: 6em;
 }

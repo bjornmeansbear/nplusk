@@ -43,10 +43,33 @@
   -o-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
 }
+.rnded-corners {
+  border-radius: 12px;
+}
 html,
 body {
   color: rgba(89,88,89,1);
   text-align: center;
+}
+.red,
+.teal,
+.blue,
+.gray,
+.dkgray,
+.pink,
+.brown {
+  border-radius: 12px;
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+.red {
+  background: rgba(222,92,81,1);
+}
+.teal {
+  background: rgba(134,207,172,1);
 }
 .blue {
   background: rgba(86,198,229,1);
@@ -54,8 +77,14 @@ body {
 .gray {
   background: rgba(145,147,148,1);
 }
+.dkgray {
+  background: rgba(89,88,89,1);
+}
 .pink {
   background: rgba(233,118,136,1);
+}
+.brown {
+  background: rgba(145,127,113,1);
 }
 .add-top {
   margin-top: 1.5em;
@@ -115,15 +144,9 @@ header {
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
 }
 .event {
-  border-radius: 12px;
   padding-top: 15px;
   padding-bottom: 30px;
   position: relative;
-  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
-  -ms-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
-  -o-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
 }
 img {
   width: 100%;
@@ -139,6 +162,7 @@ img.placeholder {
 .wrapper .container {
   color: white;
   padding: 4em 1.5em 4em;
+  font-family: 'Gentium Basic', georgia, serif;
 }
 /**** NAV BAR UP TOP ****/
 header nav ul {
@@ -244,4 +268,8 @@ a.btn:hover {
     padding: 5em 25%;
     height: 90vh;
   }
+}
+/** TYPOGRAPHY?? **/
+section h2 {
+  font-size: 6em;
 }
