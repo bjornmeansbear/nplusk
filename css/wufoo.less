@@ -1,16 +1,55 @@
 @import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
-@import url(http://fonts.googleapis.com/css?family=Old+Standard+TT:400,400italic,700);
 @import url(http://fonts.googleapis.com/css?family=PT+Mono);
 @import url(http://fonts.googleapis.com/css?family=Gentium+Basic:400,700,400italic,700italic);
-@import url(http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic);
 
 .oswald      { font-family: 'Oswald', sans-serif; text-transform: uppercase; letter-spacing: 2px; }
-.oldstandard { font-family: 'Old Standard TT', georgia, serif; }
 .ptmono      { font-family: 'PT Mono', "Lucida Console", Monaco, monospace; }
 .gentium     { font-family: 'Gentium Basic', georgia, serif; }
-.karla       { font-family: 'Karla', Helvetica, Arial, sans-serif; }
 
-form {
+/* Logo */
+#logo a {background-image:none; min-height:0; height:0;}
+* html #logo a {/* IE6 png Support */
+	background-image: none;
+	filter: none;
+}
+
+/* Typography */
+.wufoo .info h2 {
+  font-size:160%;
   .gentium;
+}
+.wufoo .info div {
   font-size: 1.111em;
+  .gentium;
+}
+.wufoo .section h3 {
+  font-size: 1.111em;
+  .gentium;
+}
+.wufoo .section div {
+  font-size: 1.111em;
+  .gentium;
+}
+.wufoo label.desc, .wufoo legend.desc {
+  font-size: 1.111em;
+  .gentium;
+}
+.wufoo li div, .wufoo li div label, .wufoo li span label {
+  font-size: 1.111em;
+  .gentium;
+}
+.wufoo input.text,
+.wufoo textarea.textarea,
+.wufoo select.select,
+.wufoo label.choice {
+  font-size: 1.111em;
+  .gentium;
+}
+.wufoo label.choice {
+  font-size: 1.111em;
+  .gentium;
+}
+.wufoo .instruct {
+  font-size: 1.111em;
+  .gentium;
 }
