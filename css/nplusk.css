@@ -358,6 +358,7 @@ img.placeholder {
   position: absolute;
   left: 50%;
   margin-left: -50%;
+  top: 200px;
   z-index: 99;
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
