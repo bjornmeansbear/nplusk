@@ -358,26 +358,34 @@ img.placeholder {
   position: absolute;
   left: 50%;
   margin-left: -50%;
-  top: 200px;
+  top: 180px;
   z-index: 99;
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 #details .saturday h4 span {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 /** media queries for details section **/
 @media (min-width: 768px) {
   #details .saturday h4 {
     top: 180px;
   }
+  #details .saturday h4 span {
+    font-size: 2em;
+  }
 }
 @media (min-width: 992px) {
   #details .saturday h4 {
-    top: 260px;
+    top: 200px;
     font-size: 4em;
     text-shadow: 4px 4px 0 rgba(134,207,172,1);
+  }
+}
+@media (min-width: 1200px) {
+  #details .saturday h4 {
+    top: 260px;
   }
 }
 /*********************************/
