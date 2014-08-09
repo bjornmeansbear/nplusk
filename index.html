@@ -20,17 +20,20 @@
   </head>
   <body id="home" data-spy="scroll" data-target=".navbar-example">
     <!-- this just hangs out to fill the screen wrap the viewport with a cool border -->
-    <div id="cool-border"></div>
+    <div id="cool-border" class="hidden-xs"></div>
 
     <header>
       <nav class="container">
         <ul class="oswald header-nav">
           <li class="title hidden-xs hidden-sm"><a href="#home">Nancy + Kristian are getting married!</a></li>
+          <li class="hidden-md hidden-lg"><a href="#home"><i class="fa fa-university"></i></a></li>
           <li><a href="#details">Details</a></li>
           <li><a href="#stay">Stay</a></li>
-          <li><a href="#rsvp">RSVP</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li class="title visible-lg"><a>October 11<sup>th</sup>, 2014 &mdash; Baltimore MD</a></li>
+          <li class="hidden-xs"><a href="#rsvp">RSVP</a></li>
+          <li class="hidden-sm hidden-md hidden-lg"><a href="#rsvp"><i class="fa fa-pencil"></i></a></li>
+          <li class="hidden-xs"><a href="#contact">Contact</a></li>
+          <li  class="hidden-sm hidden-md hidden-lg"><a href="#contact"><i class="fa fa-fax"></i></a></li>
+          <li class="title hidden-xs hidden-sm hidden-md"><a>October 11<sup>th</sup>, 2014 &mdash; Baltimore MD</a></li>
         </ul>
       </nav>
     </header>
@@ -41,37 +44,47 @@
       <h1 class="oldstandard">Nancy + Kristian&rsquo;s</h1>
       <img src="http://photos-a.ak.instagram.com/hphotos-ak-xfp1/10412845_248478205356616_382901647_n.jpg" class="img-circle placeholder" />
       <h2 class="oswald">Wedding Weekend Extravaganza</h2>
-      <h3 class="oldstandard add-top">October 10<sup>th</sup> through the 12<sup>th</sup> 2014</h3>
+      <h3 class="oldstandard add-top">October 10<sup>th</sup> through the 12<sup>th</sup>, 2014</h3>
     </main>
 
     <section id="details">
       <div class="container">
         <h2>Details</h2>
         <h4 class="oswald">Nancy + Kristian invite you to their wedding weekend extravaganza</h4>
-        <h1 class="oldstandard add-bottom">October 10<sup>th</sup> through the 12<sup>th</sup> 2014</h1>
+        <h1 class="oldstandard add-bottom">October 10<sup>th</sup> &ndash; 12<sup>th</sup>, 2014</h1>
         <div class="row">
-          <div class="col-xs-12 col-sm-6 col-md-3 red event">
+          <div class="col-xs-12 col-sm-6 col-md-3 red event friday">
             <p class="lead">Friday!</p>
             <h3 class="oswald">October, 10</h3>
             <img src="img/taco-idea1.jpg" class="img-circle"/>
-            <p class="add-top">Tacos + Beer</p>
+            <p class="add-top lead">Tacos + Beer</p>
             <p>Location: TBD</p>
             <img src="" class="img-circle"/>
-         </div>
-          <div class="col-xs-12 col-sm-6 col-md-6 teal event">
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 teal event saturday">
             <p class="lead">Saturday!</p>
             <h3 class="oswald">October, 11</h3>
             <p>The Main Event!</p>
-            <img src="img/starbright-temp1.jpg" class="img-circle"/>
-            <p class="add-top">Wedding Vows, Delicious food, beer, wine, and signature cocktails, and music by Caleb Stine</p>
-            <p>Location: Star Bright Farm, White Hall, MD</p>
+<!--             <img src="img/starbright-temp1.jpg" class="img-circle"/> -->
+            <img class="add-top" src="img/barn-lines-brown.png"/>
+            <h4>@ Star Bright Farm <br/> <span>4pm</span></h4>
+            <p class="add-top lead">Wedding Vows, Delicious food, beer, wine, &amp; signature cocktails, music by Caleb Stine, and a generally good time to be had by all.</p>
+            <p><span class="small-caps">Location</span>: <a href="http://www.starbright-farm.com/">Star Bright Farm</a></p>
+            <address>
+              2950 Garrett Road<br/>
+              White Hall, MD 21161
+            </address>
           </div>
-          <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-3 col-md-offset-0 pink event">
+          <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-3 col-md-offset-0 pink event sunday">
             <p class="lead">Sunday!</p>
             <h3 class="oswald">October, 12</h3>
-            <img src="img/brunch-idea1.jpg" class="img-circle"/>
-            <p class="add-top">Egg-Bake Brunch</p>
-            <p>Location: Nancy + Kristian’s House</p>
+            <img src="img/brunch1.jpg" class="img-circle"/>
+            <p class="add-top lead">Egg-Bake Brunch</p>
+            <p><span class="small-caps">Location</span>: Nancy + Kristian&rsquo;s House</p>
+            <address>
+              735 Bay Street<br/>
+              Baltimore MD 21211
+            </address>
           </div>
         </div>
 
@@ -155,6 +168,9 @@
       <div class="container">
         <h2><i class="fa fa-fax"></i>&nbsp; Contact</h2>
         <p class="oswald">Contact us if you have any questions or concerns</p>
+        <div class="row">
+          <p> Nancy: 507-301-9506 /// Kristian: 507-301-8402</p>
+        </div>
 
         <div class="row">
           <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 teal pad-top">

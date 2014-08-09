@@ -24,6 +24,11 @@
 /** # helper classes **/
 /**********************/
 
+.add-top        { margin-top: 1.5em; }
+.add-top-2x     { margin-top: 3em; }
+.add-bottom     { margin-bottom: 1.5em; }
+.add-bottom-2x  { margin-bottom: 3em; }
+
 /** for anything needing to stick to whole page in 1 place **/
 .fixed {
   position: fixed;
@@ -42,14 +47,11 @@
   box-shadow: 0 4px 4px  rgba(0, 0, 0, 0.2);
 }
 
+/** any box shares these rounded corner styles **/
 .rnded-corners {
   border-radius: 12px;
 }
 
-.red,.teal,.blue,.gray,.dkgray,.pink,.brown {
-  .rnded-corners;
-  .dropshadow;
-}
 .red {
   background: @pms485-red;
 }
@@ -76,10 +78,22 @@
 .gray a:hover,
 .pms426 { color: @pms426-dkgray; }
 
-.add-top        { margin-top: 1.5em; }
-.add-top-2x     { margin-top: 3em; }
-.add-bottom     { margin-bottom: 1.5em; }
-.add-bottom-2x  { margin-bottom: 3em; }
+.red,.teal,.blue,.gray,.dkgray,.pink,.brown {
+  .rnded-corners;
+  .dropshadow;
+}
+
+/** unround corners on mobile **/
+@media (max-width: 767px) {
+  .red,.teal,.blue,.gray,.dkgray,.pink,.brown {
+    border-radius: 0 !important;
+  }
+}
+
+
+/***********************/
+/** # Layout & Design **/
+/***********************/
 
 /** layout and design for big main elements **/
 html,
@@ -113,6 +127,67 @@ header {
   .dropshadow;
 }
 
+/**** NAV BAR UP TOP ****/
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul > li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+header nav ul > li > a {
+  display: block;
+  padding: 10px 10px;
+  color: white;
+  line-height: 20px;
+  transition:all 300ms ease;
+}
+
+header nav ul > li.title > a {
+  font-family: 'Old Standard TT', georgia, serif;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  color: rgba(255,255,255,0.75);
+  line-height: 16px;
+}
+
+header nav ul > li.active > a,
+header nav ul > li > a:hover {
+  background: rgba(89,88,89,0.5);
+  color: rgba(255,255,255,0.75);
+  text-decoration: none;
+}
+header nav ul > li.active.title > a,
+header nav ul > li.title > a:hover {
+  background: transparent;
+  color: rgba(255,255,255,0.75);
+}
+
+/** media queries for nav **/
+@media (min-width: 768px) {
+  header nav ul > li > a {
+  padding: 10px 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  header nav ul > li > a {
+  padding: 10px 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+
+}
+
+/**** END NAV BAR ****/
+
 #intro {
   background: @pms570-teal;
   margin: 0;
@@ -132,87 +207,57 @@ img { width: 100%; max-width: 100%; }
 
 .wrapper .container {
   color: white;
-  padding: 4em 1.5em 4em;
+  padding-top: 4em;
+  padding-bottom: 4em;
   .gentium;
 }
 
-
-
-
-#intro h2 {
-  color: white;
-  font-size: 5.5em;
-  text-shadow: 4px 4px 0 @pms570-teal;
-  width: 800px;
-  position: absolute;
-  top: 340px;
-  left: 50%;
-  margin-left: -400px;
+/** media queries for stuff in layout & design **/
+@media (min-width: 768px) {
 }
 
-
-img.placeholder {
-  max-height: 60vh;
-  width: auto;
-  max-width: 100%;
-  margin-top: 1em;
-  opacity: 0.88;
+@media (min-width: 992px) {
+  #intro {
+    margin-bottom: 20vh;
+  }
+  .wrapper .container {
+    padding: 7vh 0 14vh 0;
+  }
 }
 
-/**** NAV BAR UP TOP ****/
-header nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+@media (min-width: 1200px) {
+  .event:nth-child(1),
+  .event:nth-child(3) {
+    top: 20vh;
+  }
+  .event:nth-child(2) {
+  }
 }
 
-header nav ul > li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: block;
-  float: left;
+@media (min-height: 520px) and (min-width: 992px) {
+  #intro {
+    padding: 5em 25%;
+    height: 90vh;
+  }
 }
 
-header nav ul > li > a {
-  display: block;
-  padding: 10px 30px;
-  color: white;
-  line-height: 20px;
-  transition:all 300ms ease;
+/**************************/
+/** # Typography & Links **/
+/**************************/
+section h2 {
+  font-size: 3em;
 }
 
-header nav ul > li.title > a {
-  font-family: 'Old Standard TT', georgia, serif;
-  text-transform: capitalize;
-  letter-spacing: 1px;
-  color: rgba(255,255,255,0.75);
+a.btn {
+  .dropshadow;
 }
 
-header nav ul > li.active > a,
-header nav ul > li > a:hover {
-  background: rgba(89,88,89,0.5);
-  color: rgba(255,255,255,0.75);
-  text-decoration: none;
-}
-header nav ul > li.active.title > a,
-header nav ul > li.title > a:hover {
-  background: transparent;
-  color: rgba(255,255,255,0.75);
-}
-
-
-/**** END NAV BAR UP TOP ****/
-
-p.btn.teal,
-p.btn.teal:hover {
-  background: @pms570-teal;
-  color: rgba(89,88,89,1);
-  cursor: auto;
-  margin: 2em 0;
-  padding: 1em 2em;
-  display: block;
-  white-space: normal;
+a.btn:hover {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
 }
 
 a.btn.orange,
@@ -231,74 +276,113 @@ a.btn.orange:hover {
   color: @pms485-red;
 }
 
-a.btn {
-  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 4px 4px  rgba(0, 0, 0, 0.2);
+/** Top HOME Section **/
+#intro h2 {
+  color: white;
+  font-size: 2.75em;
+  text-shadow: 2px 2px 0 @pms570-teal;
+  width: 280px;
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  margin-left: -140px;
 }
 
-a.btn:hover {
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
+img.placeholder {
+  max-height: 60vh;
+  width: auto;
+  max-width: 100%;
+  margin-top: 1em;
+  opacity: 0.88;
+}
+
+/** media queries for typography & top Home section **/
+@media (min-width: 480px) {
+  #intro h2 {
+    font-size: 3.5em;
+    text-shadow: 3px 3px 0 @pms570-teal;
+    width: 400px;
+    top: 210px;
+    margin-left: -200px;
+  }
+}
+
+@media (min-width: 660px) {
+  #intro h2 {
+    font-size: 5.5em;
+    text-shadow: 4px 4px 0 @pms570-teal;
+    width: 600px;
+    top: 230px;
+    margin-left: -300px;
+  }
 }
 
 @media (min-width: 768px) {
+  section h2 {
+    font-size: 4em;
+  }
 }
 
 @media (min-width: 992px) {
-  #intro {
-    margin-bottom: 20vh;
+  section h2 {
+    font-size: 6em;
   }
   #intro h2 {
-    color: white;
-    font-size: 5.5em;
-    text-shadow: 4px 4px 0 @pms570-teal;
     width: 800px;
-    position: absolute;
+    margin-left: -400px;
     top: 340px;
     top: calc(40vh - 3em);
-    left: 50%;
-    margin-left: -400px;
   }
   img.placeholder {
     margin-top: 2em;
     min-height: 300px;
   }
-  .wrapper .container {
-    padding: 7vh 0 14vh 0;
+}
+
+@media (min-width: 1200px) {
+}
+
+/***********************/
+/** # Details Section **/
+/***********************/
+#details .saturday h4 {
+  color: white;
+  font-size: 2.75em;
+  text-shadow: 2px 2px 0 @pms570-teal;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  margin-left: -50%;
+  top: 200px;
+  z-index: 99;
+  .oswald;
+}
+#details .saturday h4 span {
+  font-size: 2em;
+}
+
+/** media queries for details section **/
+@media (min-width: 768px) {
+  #details .saturday h4 {
+    top: 180px;
   }
-  p.btn.teal,
-  p.btn.teal:hover {
-    display: inline-block;
-    white-space: nowrap;
+}
+
+@media (min-width: 992px) {
+  #details .saturday h4 {
+    top: 260px;
+    font-size: 4em;
+    text-shadow: 4px 4px 0 @pms570-teal;
   }
 }
 
 @media (min-width: 1200px) {
-  .event:nth-child(1),
-  .event:nth-child(3) {
-    top: 20vh;
-    height: 60vh
-  }
-  .event:nth-child(2) {
-    height: 100vh
-  }
-
 }
 
-@media (min-height: 520px) and (min-width: 992px) {
-  #intro {
-    padding: 5em 25%;
-    height: 90vh;
-  }
-}
 
-/** TYPOGRAPHY?? **/
-section h2 {
-  font-size: 6em;
-}
-
+/*********************************/
+/** # Stay / Get Around Section **/
+/*********************************/
 #stay h4 {
   font-size: 2em;
   margin: 1em 0;
@@ -322,3 +406,8 @@ section h2 {
   list-style: none;
   text-indent: -11px;
 }
+
+/**********************/
+/** # RSVP & CONTACT **/
+/**********************/
+
