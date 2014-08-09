@@ -8,6 +8,7 @@
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/nplusk.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -24,12 +25,12 @@
     <header>
       <nav class="container">
         <ul class="oswald header-nav">
-          <li class="title"><a href="#home">Nancy + Kristian are getting married!</a></li>
+          <li class="title hidden-xs hidden-sm"><a href="#home">Nancy + Kristian are getting married!</a></li>
           <li><a href="#details">Details</a></li>
           <li><a href="#stay">Stay</a></li>
           <li><a href="#rsvp">RSVP</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li class="title"><a>October 11<sup>th</sup>, 2014 &mdash; Baltimore MD</a></li>
+          <li class="title visible-lg"><a>October 11<sup>th</sup>, 2014 &mdash; Baltimore MD</a></li>
         </ul>
       </nav>
     </header>
@@ -37,8 +38,10 @@
 <div class="wrapper">
     <!-- this will be the "cover" of the card, it'll slide up out of the way -->
     <main id="intro">
-      <h1 class="oldstandard">Nancy + Kristian</h1>
+      <h1 class="oldstandard">Nancy + Kristian&rsquo;s</h1>
       <img src="http://photos-a.ak.instagram.com/hphotos-ak-xfp1/10412845_248478205356616_382901647_n.jpg" class="img-circle placeholder" />
+      <h2 class="oswald">Wedding Weekend Extravaganza</h2>
+      <h3 class="oldstandard add-top">October 10<sup>th</sup> through the 12<sup>th</sup> 2014</h3>
     </main>
 
     <section id="details">
@@ -80,19 +83,34 @@
         <h2>Stay</h2>
 
         <div class="row">
-          <div class="col-xs-12 col-md-6 blue">
-            <h4>The Brookshire Suites</h4>
-            <p>stick a map in here?</p>
-            <p>We found a small hotel right down town that you can easily get to the harbor and some of the other parts of town easily. The hotel is small enough that if you stay there you'll pretty much only be with other wedding guests... pretty cool. It's a new hotel too, and it's trying to be "gritty" and "baltimore-y" and cool. Also, breakfast is included and served on the top floor where you can look out over the harbor. Pretty cool.</p>
-            <p>Call and tell them you are part of the Iverson/Bjornard wedding block</p>
+          <div class="col-xs-12 col-md-6 blue hotel">
+            <h4 class="oswald">The Brookshire Suites</h4>
+            <img src="img/brookshire.jpg" class="img-circle" />
+            <p class="lead">We reserved a large block of rooms at a hotel right downtown. When you call for a reservation, please tell them you are part of the Iverson/Bjornard wedding block, they&rsquo;ve got plenty of rooms saved for us. To make sure you get a room in our block and at our special rate please call them by September 12<sup>th</sup>.</p>
+            <p>The hotel is small enough that if you stay there you&rsquo;ll pretty much only be with other wedding guests... pretty cool. It&rsquo;s a new(ish) hotel, and it&rsquo;s trying to be &ldquo;gritty&rdquo; and &ldquo;baltimore-y.&rdquo; Breakfast is served on the top floor where you can look out over the harbor &mdash; it&rsquo;s a nice view. The inner harbor is close enough to walk to, you can buy tickets to the aquarium at the front desk, and it isn&rsquo;t far from many of the other interesting things Baltimore has to offer.</p>
+            <hr/>
+            <address>
+              <strong><i class="fa fa-map-marker"></i>&nbsp; The Brookshire Suites</strong><br/>
+              120 East Lombard Street, Baltimore, Maryland 21202<br/>
+              Toll Free: 855-345-5033 | Phone: 410-625-1300<br/>
+              Email: <a href="mailto:info@brookshiresuites.com">info@brookshiresuites.com</a><br/>
+              <a href="http://www.brookshiresuites.com">www.brookshiresuites.com</a>
+            </address>
+            <hr/>
+            <iframe id="bs-gmap" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3088.0073433935036!2d-76.612427!3d39.288084!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4303bc7ffd2921f7!2sBrookshire+Suites!5e0!3m2!1sen!2sus!4v1407467632685" width="400" height="300" frameborder="0" style="border:0"></iframe>
           </div>
-          <div class="col-xs-12 col-md-6 gray">
-            <h4>Getting Around?</h4>
-            <p>Getting around Baltimore without a car can be tough, but here are your best bets from downtown:<br/>
-              Zipcar: offers a few locations around downtown<br/>
-              Uber: this car service/phone app lets you call a car from all over town and is usually pretty quick<br/>
-              Taxis... from downtown its usualyl pretty easy to grab a cab somewhere else &mdash; but it can be nearly impossible to find or flag a cab back down afterward. If you take a cab, make sure you get a cab company&#x27;s number so you can request pickup from whereever you end up. Unfortunately this is pretty unreliable, so Nancy and I use Uber the few times we ever need a lift somewhere.</p>
-            <p>The closest airport is BWI — Baltimore Washington International. We recommend you try getting a flight into there if possible. You can also fly into Reagan or Dulles if necessary, though they are both rather far away from Baltimore...</p>
+          <div class="col-xs-12 col-md-6 gray transport">
+            <h4 class="oswald">Getting Into &amp; Around Bmore</h4>
+            <h4><i class="fa fa-plane fa-5x pms426"></i></h4>
+            <p class="lead">The closest airport is BWI &mdash; Baltimore Washington International. We recommend you try getting a flight into there. You can also fly into Reagan or Dulles in DC if necessary, though they are both rather far from Baltimore and are not easy to travel to unless you rent a car. You can get to downtown Baltimore from BWI by the lightrail or by taxi fairly simply. </p>
+            <i class="fa fa-truck pms426 fa-3x"></i>
+            <p class="lead">For those of you coming from out of town, on Saturday we&rsquo;re renting some busses so that you won&rsquo;t have to find your own way to the party. The busses will pick you up right at the hotel, and then drop you back off there at the end of the night. <br/>Easy peasy lemon squeezy.</p>
+            <p>Getting around Baltimore without a car can be tough, but here are your best bets from downtown:</p>
+            <ul class="text-left">
+              <li><i class="fa fa-car pms426"></i>&nbsp; <a href="http://www.zipcar.com/">Zipcar</a>: Zipcar offers a few locations around downtown.</li>
+              <li><i class="fa fa-cab pms426"></i>&nbsp; <a href="https://www.uber.com/">Uber</a>: This car service/phone app lets you call a car from all over town and is usually pretty quick.</li>
+              <li><i class="fa fa-cab pms426"></i>&nbsp; <a href="https://www.google.com/#q=baltimore+taxi+companies">Taxis</a>: From downtown it is pretty easy to grab a cab somewhere else &mdash; but it can be nearly impossible to find a cab back afterward. If you take a cab, make sure you get a cab company&#x27;s number so you can request pickup from where ever you end up. Baltimore cabs are pretty unreliable, so we have typically come to rely on Uber the few times we ever need a lift somewhere.</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -100,7 +118,7 @@
 
     <section id="rsvp">
       <div class="container">
-        <h2>RSVP</h2>
+        <h2><i class="fa fa-pencil"></i>&nbsp; RSVP</h2>
 
         <div class="row">
           <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 teal pad-top">
@@ -135,7 +153,7 @@
 
     <section id="contact">
       <div class="container">
-        <h2>Contact</h2>
+        <h2><i class="fa fa-fax"></i>&nbsp; Contact</h2>
         <p class="oswald">Contact us if you have any questions or concerns</p>
 
         <div class="row">

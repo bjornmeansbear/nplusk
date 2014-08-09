@@ -20,14 +20,7 @@
 .karla {
   font-family: 'Karla', Helvetica, Arial, sans-serif;
 }
-.fixed {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-/** Colors **/
+/** # Colors **/
 /** Red Orange **/
 /** Teal **/
 /** Brown  **/
@@ -36,6 +29,18 @@
 /** dark gray **/
 /** pink **/
 /** /COLORS **/
+/**********************/
+/** # helper classes **/
+/**********************/
+/** for anything needing to stick to whole page in 1 place **/
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+/** everything shares a common dropshadow style **/
 .dropshadow {
   -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
@@ -45,11 +50,6 @@
 }
 .rnded-corners {
   border-radius: 12px;
-}
-html,
-body {
-  color: rgba(89,88,89,1);
-  text-align: center;
 }
 .red,
 .teal,
@@ -103,6 +103,12 @@ body {
 .add-bottom-2x {
   margin-bottom: 3em;
 }
+/** layout and design for big main elements **/
+html,
+body {
+  color: rgba(89,88,89,1);
+  text-align: center;
+}
 #backdrop {
   background: rgba(145,127,113,1) url('../img/woodgrain-transparent.png') center center no-repeat;
   background-size: cover;
@@ -142,6 +148,7 @@ header {
   margin: 0;
   margin-bottom: 33%;
   padding: 2em 2em 4em 2em;
+  position: relative;
   -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
   -ms-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
@@ -157,17 +164,27 @@ img {
   width: 100%;
   max-width: 100%;
 }
+.wrapper .container {
+  color: white;
+  padding: 4em 1.5em 4em;
+  font-family: 'Gentium Basic', georgia, serif;
+}
+#intro h2 {
+  color: white;
+  font-size: 5.5em;
+  text-shadow: 4px 4px 0 rgba(134,207,172,1);
+  width: 800px;
+  position: absolute;
+  top: 340px;
+  left: 50%;
+  margin-left: -400px;
+}
 img.placeholder {
   max-height: 60vh;
   width: auto;
   max-width: 100%;
   margin-top: 1em;
   opacity: 0.88;
-}
-.wrapper .container {
-  color: white;
-  padding: 4em 1.5em 4em;
-  font-family: 'Gentium Basic', georgia, serif;
 }
 /**** NAV BAR UP TOP ****/
 header nav ul {
@@ -244,6 +261,17 @@ a.btn:hover {
 @media (min-width: 992px) {
   #intro {
     margin-bottom: 20vh;
+  }
+  #intro h2 {
+    color: white;
+    font-size: 5.5em;
+    text-shadow: 4px 4px 0 rgba(134,207,172,1);
+    width: 800px;
+    position: absolute;
+    top: 340px;
+    top: calc(37vh);
+    left: 50%;
+    margin-left: -400px;
   }
   img.placeholder {
     margin-top: 2em;
